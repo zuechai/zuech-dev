@@ -1,0 +1,14 @@
+COLORS:
+
+
+FONT-SIZES:
+
+
+LINE-HEIGHTS:
+
+
+LETTER-SPACING:
+- Sub-heading: 0.2rem
+- Default: 0.3rem
+- Footer0.5rem
+

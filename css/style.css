@@ -17,6 +17,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1;
+  letter-spacing: 0.3rem;
   color: #fff;
   background-color: #111;
 }
@@ -91,7 +92,10 @@ li {
 }
 
 .sub-heading {
-  font-size: 3.2rem;
+  text-align: center;
+  color: #ccc;
+  font-size: 1.8rem;
+  text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-bottom: 4.8rem;
 }
@@ -175,12 +179,27 @@ header {
 }
 
 .service-box {
+  padding: 2rem;
   background-color: #333;
-  height: 30rem;
+  box-shadow: 0 0 1rem #ffffff1f;
+  text-align: center;
+}
+
+.service-box h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 1rem #ffffff1f;
+}
+
+.service-box p {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.grid--2-row {
+  grid-template-rows: repeat(2, 1fr);
 }
 
 /* ************** */
