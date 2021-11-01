@@ -44,6 +44,11 @@ li {
   display: grid;
 }
 
+.grid--h-v-centered {
+  align-items: center;
+  justify-content: center;
+}
+
 .grid--2-col {
   grid-template-columns: auto 1fr;
 }
@@ -76,6 +81,7 @@ li {
 
 .heading-primary {
   font-size: 7.2rem;
+  text-shadow: #444 0.3rem 0.3rem;
 }
 
 .heading-secondary {
@@ -137,7 +143,6 @@ header {
 }
 
 .hero-text-box h1 {
-  text-shadow: #333 0.2rem 0.5rem;
 }
 
 .hero-text {
@@ -154,7 +159,7 @@ header {
 
 .hero-img img {
   width: 100%;
-  height: 100%;
+  /* height: 10%; */
   /* border: 0.02rem solid #fff; */
   border-radius: 0.5rem;
   /* padding: 0.1rem; */
@@ -175,6 +180,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 1rem #ffffff1f;
 }
 
 /* ************** */
