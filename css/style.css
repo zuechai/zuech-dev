@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* ************** */
+/* DEFAULT STYLES */
+/* ************** */
+
+body {
+  font-size: 1.6rem;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: #fff;
+  background-color: #333;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* *************** */
+/* REUSABLE STYLES */
+/* *************** */
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-col {
+  grid-template-columns: auto 1fr;
+}
+
+.grid--2-col--h-end {
+  align-items: end;
+}
+
+.grid--2-col--fixed {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ************** */
+/* HEADER & NAV STYLES */
+/* ************** */
+header {
+  background: #333;
+  padding: 2rem;
+}
+
+.logo-box {
+  margin-bottom: -0.65rem;
+}
+.logo-img {
+  width: 9.6rem;
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #51cf66;
+}
