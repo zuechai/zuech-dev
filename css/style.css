@@ -13,10 +13,12 @@ html {
 /* ************** */
 
 body {
-  font-size: 1.6rem;
   font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
   color: #fff;
-  background-color: #333;
+  background-color: #111;
 }
 
 a:link,
@@ -35,7 +37,7 @@ li {
 
 .container {
   margin: 0 auto;
-  max-width: 120rem;
+  max-width: 110rem;
 }
 
 .grid {
@@ -52,27 +54,65 @@ li {
 
 .grid--2-col--fixed {
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 2.4rem;
+}
+
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+}
+
+/* ************** */
+/* HEADING TYPOGRAPHY STYLES */
+/* ************** */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #51cf66;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.heading-primary {
+  font-size: 7.2rem;
+}
+
+.heading-secondary {
+}
+
+.heading-tertiary {
+}
+
+.sub-heading {
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 4.8rem;
 }
 
 /* ************** */
 /* HEADER & NAV STYLES */
 /* ************** */
+
 header {
-  background: #333;
-  padding: 2rem;
+  background: #111;
+  padding: 0 2rem;
+  margin: 4.8rem 0 9.6rem 0;
+  width: 100vw;
 }
 
 .logo-box {
-  margin-bottom: -0.65rem;
+  /* margin-bottom: -0.65rem; */
 }
 .logo-img {
-  width: 9.6rem;
+  width: 4.8rem;
 }
 
 .main-nav-list {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 9.6rem;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
@@ -84,4 +124,55 @@ header {
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #51cf66;
+}
+
+/* ************** */
+/* HERO SECTION STYLES */
+/* ************** */
+
+.section-hero {
+  padding: 0 2rem;
+  margin-bottom: 9.6rem;
+  background-color: #111;
+}
+
+.hero-text-box h1 {
+  text-shadow: #333 0.2rem 0.5rem;
+}
+
+.hero-text {
+  font-size: 2.4rem;
+  line-height: 1.6;
+  letter-spacing: 0.2rem;
+}
+
+.hero-img {
+  /* border: 0.02rem solid #fff; */
+  /* border-radius: 0.5rem; */
+  /* padding: 0.5rem; */
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  /* border: 0.02rem solid #fff; */
+  border-radius: 0.5rem;
+  /* padding: 0.1rem; */
+  box-shadow: 0 0 10rem rgba(255, 255, 255, 0.123);
+}
+
+/* ************** */
+/* SERVICES SECTION STYLES */
+/* ************** */
+
+.section-services {
+  padding: 0 2rem;
+}
+
+.service-box {
+  background-color: #333;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
