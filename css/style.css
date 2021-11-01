@@ -176,3 +176,14 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+/* ************** */
+/* FOOTERS */
+/* ************** */
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  color: #999;
+  letter-spacing: 0.5rem;
+}
