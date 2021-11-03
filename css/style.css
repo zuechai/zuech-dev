@@ -28,6 +28,7 @@ body {
     #141414,
     #181818
   );
+  padding-top: 21.4rem;
 }
 
 a:link,
@@ -117,8 +118,21 @@ li {
 /* ************** */
 
 header {
-  padding: 0 2rem;
-  margin: 4.8rem 0 9.6rem 0;
+  position: fixed;
+  top: 0;
+  padding: 4.8rem 2rem;
+  /* margin: 4.8rem 0 9.6rem 0; */
+  width: 100%;
+  /* background-image: linear-gradient(
+    to right,
+    #111,
+    #141414,
+    #222,
+    #141414,
+    #181818
+  ); */
+  background-color: #111;
+  box-shadow: 0 1rem 5rem 1rem #000;
 }
 
 .logo-box {
@@ -140,6 +154,7 @@ header {
 
 .main-nav-link:link,
 .main-nav-link:visited {
+  transition: all 0.3s;
 }
 
 .main-nav-link:hover,
