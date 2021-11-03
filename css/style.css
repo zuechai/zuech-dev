@@ -20,6 +20,14 @@ body {
   letter-spacing: 0.3rem;
   color: #fff;
   background-color: #111;
+  background-image: linear-gradient(
+    to right,
+    #111,
+    #141414,
+    #181818,
+    #141414,
+    #181818
+  ) !important;
 }
 
 a:link,
@@ -68,6 +76,10 @@ li {
   gap: 4.8rem;
 }
 
+.grid--2-row {
+  grid-template-rows: 1fr 2fr;
+}
+
 /* ************** */
 /* HEADING TYPOGRAPHY STYLES */
 /* ************** */
@@ -105,7 +117,6 @@ li {
 /* ************** */
 
 header {
-  background: #111;
   padding: 0 2rem;
   margin: 4.8rem 0 9.6rem 0;
 }
@@ -143,7 +154,6 @@ header {
 .section-hero {
   padding: 0 2rem;
   margin-bottom: 9.6rem;
-  background-color: #111;
 }
 
 .hero-text-box h1 {
@@ -181,9 +191,17 @@ header {
 .service-box {
   padding: 2rem;
   background-color: #333;
-  box-shadow: 0 0 1rem #ffffff1f;
+  border: 0.3rem solid #444;
+  border-radius: 0.5rem;
   text-align: center;
+  /* background: radial-gradient(#333 ); */
+  transition: all 0.3s;
 }
+
+/* .service-box:hover {
+  box-shadow: 0 0 5rem #ffffff1f;
+  transform: scale(110%); 
+} */
 
 .service-box h2 {
   display: flex;
@@ -197,11 +215,6 @@ header {
   justify-content: flex-start;
   text-align: center;
   line-height: 1.5;
-}
-
-.grid--2-row {
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-rows: 1fr 2fr;
 }
 
 /* ************** */
