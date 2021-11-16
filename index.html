@@ -23,7 +23,7 @@
   </head>
   <body>
     <header>
-      <div class="container grid grid--2-col flex-center">
+      <div class="container grid grid--2-col flex flex--center">
         <div class="logo-box main-nav-link">
           <a href="index.html" class="main-nav-link--logo">
             <img
@@ -33,11 +33,12 @@
             />
           </a>
         </div>
+
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li><a href="#" class="main-nav-link .underline">Portfolio</a></li>
+            <li><a href="#" class="main-nav-link">Portfolio</a></li>
             <li><a href="#" class="main-nav-link">Resume</a></li>
-            <li><a href="#" class="main-nav-link">Services</a></li>
+            <li class="hide"><a href="#" class="main-nav-link">Services</a></li>
             <li><a href="#" class="main-nav-link">Contact</a></li>
           </ul>
         </nav>
@@ -61,9 +62,14 @@
           </div>
         </div>
       </section>
+
       <section class="section-services">
-        <div class="container">
-          <p class="sub-heading">Web Development and Design Services</p>
+        <div class="container flex flex--center flex--dir-col">
+          <p class="sub-heading">
+            <span class="border-top"></span>
+            Web Development and Design Services
+            <span class="border-bottom"></span>
+          </p>
           <div class="grid grid--3-col .grid--row">
 						<div class="service-box grid grid--2-row">
 							<h2 class="heading-secondary">Content Management</h2>
@@ -94,9 +100,9 @@
       </section>
     </main>
 
-		<footer class="footer container flex-center">
+		<footer class="footer container flex flex--center">
       <p class="copyright">
-        <span class="border"></span>
+        <span class="border-top"></span>
         &copy; 2021 Anthony Zuech
       </p> 
 		</footer>
