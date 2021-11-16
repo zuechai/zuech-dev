@@ -18,23 +18,38 @@ body {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.3rem;
-  color: #fff;
-  background-color: #111;
-  background-image: linear-gradient(
+  color: #111;
+  background-color: #fff;
+  /* background-image: linear-gradient(
     to right,
     #111,
     #141414,
     #222,
     #141414,
     #181818
-  );
-  padding-top: 21.4rem;
+  ); */
+  /* padding-top: 21.4rem; */
 }
 
 a:link,
 a:visited {
-  color: #fff;
+  color: #111;
   text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, #368a44);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+a:hover,
+a:focus {
+  background-size: 100% 2px;
+  color: #368a44;
 }
 
 li {
@@ -81,6 +96,12 @@ li {
   grid-template-rows: 1fr 2fr;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ************** */
 /* HEADING TYPOGRAPHY STYLES */
 /* ************** */
@@ -88,14 +109,14 @@ li {
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
-  color: #51cf66;
+  color: #358643;
   font-weight: 600;
   margin-bottom: 3.2rem;
 }
 
 .heading-primary {
   font-size: 7.2rem;
-  text-shadow: #444 0.3rem 0.3rem;
+  text-shadow: #ddd 0.3rem 0.3rem;
 }
 
 .heading-secondary {
@@ -106,7 +127,7 @@ li {
 
 .sub-heading {
   text-align: center;
-  color: #ccc;
+  color: #999;
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -118,26 +139,19 @@ li {
 /* ************** */
 
 header {
-  position: fixed;
-  top: 0;
   padding: 4.8rem 2rem;
-  /* margin: 4.8rem 0 9.6rem 0; */
-  width: 100%;
-  /* background-image: linear-gradient(
-    to right,
-    #111,
-    #141414,
-    #222,
-    #141414,
-    #181818
-  ); */
-  background-color: #111;
-  box-shadow: 0 1rem 5rem 1rem #000;
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.1);
+  margin-bottom: 9.6rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; */
 }
 
 .logo-box {
   /* margin-bottom: -0.65rem; */
 }
+
 .logo-img {
   width: 4.8rem;
 }
@@ -146,7 +160,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.2rem;
+  gap: 4rem;
   margin-left: 9.6rem;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -155,11 +169,13 @@ header {
 .main-nav-link:link,
 .main-nav-link:visited {
   transition: all 0.3s;
+  animation: 0.3s ease-in 0 1 normal forwards;
+  font-weight: 500;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #51cf66;
+  /* color: #368a44; */
 }
 
 /* ************** */
@@ -169,6 +185,11 @@ header {
 .section-hero {
   padding: 0 2rem;
   margin-bottom: 9.6rem;
+
+  background-image: url(img/stock/html.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .hero-text-box h1 {
@@ -181,18 +202,15 @@ header {
 }
 
 .hero-img {
-  /* border: 0.02rem solid #fff; */
-  /* border-radius: 0.5rem; */
-  /* padding: 0.5rem; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* background-color: red; */
+  /* box-shadow: 0 0 5rem rgba(51, 51, 51, 0.1); */
 }
 
 .hero-img img {
-  width: 100%;
-  /* height: 10%; */
-  /* border: 0.02rem solid #fff; */
   border-radius: 0.5rem;
-  /* padding: 0.1rem; */
-  box-shadow: 0 0 10rem rgba(255, 255, 255, 0.123);
+  width: 100%;
 }
 
 /* ************** */
@@ -201,13 +219,15 @@ header {
 
 .section-services {
   padding: 0 2rem;
+  /* box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.1); */
 }
 
 .service-box {
   padding: 2rem;
-  background-color: #333;
-  border: 0.3rem solid #444;
+  background-color: #fff;
+  /* border: 0.3rem solid #eee; */
   border-radius: 0.5rem;
+  box-shadow: 0 0rem 5rem rgba(51, 51, 51, 0.1);
   text-align: center;
   /* background: radial-gradient(#333 ); */
   transition: all 0.3s;
@@ -241,4 +261,17 @@ header {
   text-align: center;
   color: #999;
   letter-spacing: 0.5rem;
+  /* box-shadow: 0 -1rem 100rem rgba(51, 51, 51, 0.05); */
+}
+
+.copyright {
+  padding: 2rem 0;
+}
+
+.border {
+  display: inline-block;
+  content: "";
+  width: 100%;
+  border-top: 0.1rem solid #999;
+  margin-bottom: 2rem;
 }
