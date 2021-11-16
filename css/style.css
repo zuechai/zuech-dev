@@ -237,24 +237,18 @@ header {
 
 .section-services {
   padding: 0 2rem;
+  margin-bottom: 7.6rem;
   /* box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.1); */
 }
 
 .service-box {
   padding: 2rem;
+  height: 40rem;
   background-color: #fff;
-  /* border: 0.3rem solid #eee; */
   border-radius: 0.5rem;
   box-shadow: 0 0rem 5rem rgba(51, 51, 51, 0.1);
   text-align: center;
-  /* background: radial-gradient(#333 ); */
-  transition: all 0.3s;
 }
-
-/* .service-box:hover {
-  box-shadow: 0 0 5rem #ffffff1f;
-  transform: scale(110%); 
-} */
 
 .service-box h2 {
   display: flex;
@@ -277,7 +271,6 @@ header {
 /* ************** */
 
 .footer {
-  padding: 2rem;
   text-align: center;
   color: #999;
   letter-spacing: 0.5rem;
@@ -285,5 +278,6 @@ header {
 }
 
 .copyright {
-  padding: 2rem 0;
+  padding: 0 2rem;
+  margin-bottom: 4.8rem;
 }
