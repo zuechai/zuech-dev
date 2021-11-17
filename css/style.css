@@ -16,7 +16,7 @@ body {
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 0.2rem;
   color: #111;
   background-color: #fff;
@@ -33,8 +33,9 @@ body {
 
 a:link,
 a:visited {
-  color: #111;
+  color: #fff;
   text-decoration: none;
+  padding-bottom: 0.5rem;
 }
 
 a {
@@ -42,13 +43,13 @@ a {
   background-image: linear-gradient(currentColor, #368a44);
   background-position: 50% 100%;
   background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.3s;
+  background-size: 0% 0.2rem;
+  transition: background-size 0.4s;
 }
 
 a:hover,
 a:focus {
-  background-size: 100% 2px;
+  background-size: 100% 0.2rem;
   color: #368a44;
 }
 
@@ -105,6 +106,11 @@ li {
   justify-content: center;
 }
 
+.flex--justify-start {
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .flex--dir-col {
   flex-direction: column;
 }
@@ -143,7 +149,7 @@ li {
 
 .heading-primary {
   font-size: 7.2rem;
-  text-shadow: #ddd 0.3rem 0.3rem;
+  /* text-shadow: #ddd 0.3rem 0.3rem; */
 }
 
 .heading-secondary {
@@ -157,6 +163,7 @@ li {
   text-align: center;
   color: #999;
   font-size: 1.8rem;
+  font-weight: 500;
   text-transform: uppercase;
   /* letter-spacing: 0.2rem; */
   margin-bottom: 6.2rem;
@@ -167,21 +174,52 @@ li {
 /* ************** */
 
 header {
-  padding: 4.8rem 2rem;
-  background-color: #fff;
-  box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.1);
+  padding: 2rem 2rem;
+  background-color: #111;
   margin-bottom: 9.6rem;
   /* display: flex;
   align-items: center;
   justify-content: space-around; */
 }
 
+.header {
+  box-shadow: 0 0 2rem 4rem rgba(17, 17, 17, 0.1);
+}
+
 .logo-box {
-  /* margin-bottom: -0.65rem; */
+  background-color: #fff;
+  height: 11rem;
+  width: 11rem;
+  /* border: 0.3rem solid #111; */
+  border-radius: 50%;
+  position: relative;
+  transition: all ease-in-out 0.4s;
+}
+
+.logo-box--inner {
+  display: inline-block;
+  content: "";
+  width: 10.8rem;
+  height: 10.8rem;
+  border-radius: 50%;
+  background-color: #111;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-box:hover,
+.logo-box:focus {
+  background-color: #368a44;
 }
 
 .logo-img {
   width: 4.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-nav-list {
@@ -189,7 +227,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
-  margin-left: 9.6rem;
+  color: #fff;
   font-size: 1.8rem;
   text-transform: uppercase;
 }
@@ -238,7 +276,6 @@ header {
 .section-services {
   padding: 0 2rem;
   margin-bottom: 7.6rem;
-  /* box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.1); */
 }
 
 .service-box {
@@ -274,7 +311,6 @@ header {
   text-align: center;
   color: #999;
   letter-spacing: 0.5rem;
-  /* box-shadow: 0 -1rem 100rem rgba(51, 51, 51, 0.05); */
 }
 
 .copyright {

@@ -22,29 +22,34 @@
     <title>Anthony Zuech - Web Development</title>
   </head>
   <body>
-    <header>
-      <div class="container grid grid--2-col flex flex--center">
-        <div class="logo-box main-nav-link">
-          <a href="index.html" class="main-nav-link--logo">
-            <img
-              src="img/vectors/z-tall--green.png"
-              alt="zuech.dev logo"
-              class="logo-img"
-            />
-          </a>
+    <header class="header">
+        <div class="container grid grid--2-col--fixed">
+          <div class="main-nav-link flex flex--center">
+            <div class="logo-box">
+              <div class="logo-box--inner">
+                <a href="index.html" class="main-nav-link--logo">
+                  <img
+                  src="img/vectors/z-tall--green.png"
+                  alt="zuech.dev logo"
+                  class="logo-img"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <nav class="main-nav flex flex--justify-start">
+            <ul class="main-nav-list">
+              <li><a href="#" class="main-nav-link">Portfolio</a></li>
+              <li><a href="#" class="main-nav-link">Resume</a></li>
+              <li class="hide"><a href="#" class="main-nav-link">Services</a></li>
+              <li><a href="#" class="main-nav-link">Contact</a></li>
+            </ul>
+          </nav>
         </div>
-
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li><a href="#" class="main-nav-link">Portfolio</a></li>
-            <li><a href="#" class="main-nav-link">Resume</a></li>
-            <li class="hide"><a href="#" class="main-nav-link">Services</a></li>
-            <li><a href="#" class="main-nav-link">Contact</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
-
+    
     <main>
       <section class="section-hero">
         <div class="container grid grid--2-col--fixed grid--h-v-centered">
@@ -56,11 +61,11 @@
               Freelance web design and content management
             </h1>
             <p class="hero-text">
+              <span class="border-top"></span>
               Easily manage your company's web presence and update your website
               with modern responsive pages.
             </p>
           </div>
-        </div>
       </section>
 
       <section class="section-services">
@@ -104,6 +109,7 @@
       <p class="copyright">
         <span class="border-top"></span>
         &copy; 2021 Anthony Zuech
+        <span class="border-bottom"></span>
       </p> 
 		</footer>
   </body>
