@@ -19,16 +19,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.2rem;
   color: #111;
-  background-color: #fff;
-  /* background-image: linear-gradient(
-    to right,
-    #111,
-    #141414,
-    #222,
-    #141414,
-    #181818
-  ); */
-  /* padding-top: 21.4rem; */
 }
 
 a:link,
