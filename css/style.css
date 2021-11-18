@@ -21,6 +21,10 @@ body {
   color: #111;
 }
 
+/* .page-container {
+  background-color: #ddd;
+} */
+
 a:link,
 a:visited {
   color: #fff;
@@ -54,6 +58,7 @@ li {
 .container {
   margin: 0 auto;
   max-width: 110rem;
+  /* background-color: #fff; */
 }
 
 .grid {
@@ -270,7 +275,7 @@ header {
 
 .service-box {
   padding: 2rem;
-  height: 40rem;
+  min-height: 40rem;
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0rem 5rem rgba(51, 51, 51, 0.1);
