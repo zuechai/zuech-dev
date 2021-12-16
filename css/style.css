@@ -194,8 +194,8 @@ header {
 .logo-box--inner {
   display: inline-block;
   content: "";
-  width: 10.8rem;
-  height: 10.8rem;
+  width: 10.7rem;
+  height: 10.7rem;
   border-radius: 50%;
   background-color: #111;
   position: absolute;
@@ -273,13 +273,24 @@ header {
   margin-bottom: 7.6rem;
 }
 
-.service-box {
+.service {
+  /* min-height: 40rem; */
+  /* align-items-center; */
   padding: 2rem;
   min-height: 40rem;
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0rem 5rem rgba(51, 51, 51, 0.1);
   text-align: center;
+}
+
+.service-box {
+  /* padding: 2rem;
+  min-height: 40rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0rem 5rem rgba(51, 51, 51, 0.1);
+  text-align: center; */
 }
 
 .service-box h2 {
