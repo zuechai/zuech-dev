@@ -171,7 +171,6 @@ li {
 header {
   padding: 2rem 2rem;
   background-color: #111;
-  margin-bottom: 9.6rem;
   /* display: flex;
   align-items: center;
   justify-content: space-around; */
@@ -244,13 +243,24 @@ header {
 /* ************** */
 
 .section-hero {
-  padding: 0 2rem;
-  margin-bottom: 9.6rem;
-
-  background-image: url(img/stock/html.jpg);
+  padding: 9.6rem 2rem;
+  /* background-image: url(img/stock/html.jpg);
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+}
+
+.hero-img {
+  max-height: 65vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.hero-img img {
+  max-height: 100rem;
+  max-width: 70rem;
+  border-radius: 0.5rem;
+  object-fit: fill;
 }
 
 .hero-text {
@@ -259,18 +269,13 @@ header {
   letter-spacing: 0.2rem;
 }
 
-.hero-img img {
-  border-radius: 0.5rem;
-  width: 100%;
-}
-
 /* ************** */
 /* SERVICES SECTION STYLES */
 /* ************** */
 
 .section-services {
   padding: 0 2rem;
-  margin-bottom: 7.6rem;
+  padding-bottom: 7.6rem;
 }
 
 .service {
@@ -321,5 +326,5 @@ header {
 
 .copyright {
   padding: 0 2rem;
-  margin-bottom: 4.8rem;
+  padding-bottom: 4.8rem;
 }
