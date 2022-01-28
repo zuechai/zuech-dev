@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="shortcut icon"
@@ -72,7 +74,6 @@
         <section class="section-services">
           <div class="container flex flex--center flex--dir-col">
             <p class="sub-heading">
-              <span class="border-top"></span>
               Web Development and Design Services
               <span class="border-bottom"></span>
             </p>
@@ -117,8 +118,8 @@
           </div>
         </section>
 
-        <<div class="container">
-          <span class="border-top"></span>      
+        <div class="container">
+          <span class="section-border"></span>      
         </div>
       
         <section class="section-portfolio" id="portfolio">
@@ -138,28 +139,51 @@
         </section>
 
         <div class="container">
-          <span class="border-top"></span>      
+          <span class="section-border"></span>      
         </div>
 
         <section class="section-contact" id="contact">
           <div class="contact-box">
-            <p>
+            <p class="sub-heading">
               Contact section under constrution...
             </p>
+
+            <form action="#" class="cta">
+              <div>
+                <label for="cta-name" class="cta-name">
+                  Preferred name: 
+                </label>
+                <input type="text" name="cta-name" id="cta-name" placeholder="Anthony Zuech" />  
+              </div>
+              
+              <div>
+                <label for="cta-email" class="cta-email">
+                  Email: 
+                </label>
+                <input type="email" name="cta-email" id="cta-email" placeholder="zuechai@gmail.com" />
+              </div>
+              
+              <div>
+                <label for="cta-message" class="cta-message">
+                  Please a short message about your project's needs:
+                </label>
+                <textarea name="cta-message" id="cta-message" placeholder="Type your message here. . . "></textarea>
+              </div>
+
+              <button type="submit">Submit</button>
+            </form>
           </div>
         </section>
 
         <div class="container">
-          <span class="border-top"></span>      
+          <span class="section-border"></span>      
         </div>
       </div>
     </main>
 
 		<footer class="footer container flex flex--center" id="footer">
       <p class="copyright">
-        <span class="border-top"></span>
         &copy; 2022 Anthony Zuech
-        <span class="border-bottom"></span>
       </p> 
 		</footer>
   </body>
